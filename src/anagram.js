@@ -26,7 +26,7 @@ var isAnagram = (str1, str2) => {
 
   // es6 versions
   str1Arr.forEach( (letter) => {
-    if ( str1ObjCounter[letter] ) {
+    if ( str1ObjCounter[letter] >= 0 ) {
       str1ObjCounter[letter]++;
     } else {
       str1ObjCounter[letter] = 0;
@@ -34,7 +34,7 @@ var isAnagram = (str1, str2) => {
   })
 
   str2Arr.forEach( (letter) => {
-    if ( str2ObjCounter[letter] ) {
+    if ( str2ObjCounter[letter] >= 0 ) {
       str2ObjCounter[letter]++;
     } else {
       str2ObjCounter[letter] = 0;
