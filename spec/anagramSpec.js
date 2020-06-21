@@ -53,7 +53,6 @@
       it('should return false for wrong repeating letter', function() {
         expect(isAnagram('coaat', 'tacoo')).to.equal(false);
         expect(isAnagram('badd', 'dabb')).to.equal(false);
-        expect(isAnagram('badd', 'dabb')).to.equal(false);
       });
 
       it('should return false with non-letter characters given for non-anagrams', function() {
